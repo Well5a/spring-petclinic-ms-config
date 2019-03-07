@@ -1,5 +1,5 @@
-# spring-petclinic-microservices-config
+# spring-petclinic-ms-config
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+Customized Config Repository for [spring-petclinic-microservices](https://github.com/spring-petclinic/spring-petclinic-microservices).
 
-Configuration repository for distributed Spring Petclinic application
+Original Repository: [spring-petclinic-micorservices-config](https://github.com/spring-petclinic/spring-petclinic-microservices-config).
