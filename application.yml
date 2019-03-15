@@ -49,7 +49,7 @@ management:
 spring:
   profiles: mysql
   datasource:
-    #schema: classpath*:db/mysql/schema.sql
+    schema: classpath*:db/mysql/schema.sql
     data: classpath*:db/mysql/data.sql
     url: jdbc:mysql://spcm-mysql:3306/petclinic?useSSL=false&allowPublicKeyRetrieval=true
     username: pc
