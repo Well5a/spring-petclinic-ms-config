@@ -52,6 +52,6 @@ spring:
     schema: classpath*:db/mysql/schema.sql
     data: classpath*:db/mysql/data.sql
     url: jdbc:mysql://spcm-mysql:3306/petclinic?useSSL=false&allowPublicKeyRetrieval=true
-    username: root
-    password: petclinic
+    username: pc
+    password: pc
     initialization-mode: ALWAYS
