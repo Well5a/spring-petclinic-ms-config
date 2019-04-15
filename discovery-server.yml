@@ -11,3 +11,26 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
+---
+spring:
+  profiles: kubernetes
+  eureka:
+    instance:
+      hostname: discovery-server
+    # standalone mode
+    client:
+      registerWithEureka: false
+      fetchRegistry: false
+      serviceUrl:
+        defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+---
+spring:
+  profiles: inspectit
+  inspectit:
+    exporters:
+      metrics:
+        prometheus:
+          port: 9075
+    service:
+      name: spcm-discovery-server

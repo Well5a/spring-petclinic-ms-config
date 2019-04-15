@@ -22,7 +22,30 @@ spring:
   profiles: docker
   zipkin:
     baseUrl: http://tracing-server:9411
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://discovery-server:8761/eureka/
+  eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://discovery-server:8761/eureka/
+
+---
+spring:
+  profiles: kubernetes
+  zipkin:
+    baseUrl: http://tracing-server:9411
+  eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://discovery-server:8761/eureka/
+    instance:
+      preferIPAddress: true
+
+---
+spring:
+  profiles: inspectit
+  inspectit:
+    exporters:
+      metrics:
+        prometheus:
+          port: 9074
+    service:
+      name: spcm-api-gateway
