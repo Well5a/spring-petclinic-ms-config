@@ -62,9 +62,3 @@ spring:
   inspectit.self.monitoring.enabled: true
   java.options: -javaagent:/agent/inspectit-ocelot-agent.jar
   
----
-spring:
-  profiles: kubernetes
-  cloud:
-    config:
-      uri: http://config-server:8888
