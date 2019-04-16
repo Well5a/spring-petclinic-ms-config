@@ -59,6 +59,6 @@ spring:
 ---
 spring:
   profiles: inspectit
-  inspectit.self.monitoring.enabled: true
-  java.options: -javaagent:/agent/inspectit-ocelot-agent.jar
+inspectit.self.monitoring.enabled: true
+java.options: -javaagent:/agent/inspectit-ocelot-agent.jar
   
